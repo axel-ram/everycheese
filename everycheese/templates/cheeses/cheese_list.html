@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Cheese{% endblock title %}
+
+{% block content %}
+	<h2>Cheese list</h2>
+	<ul>
+		{% for cheese in cheese_list %}
+			<li><a href="#Willdonext">{{ cheese.name }}</a></li>
+		{% endfor %}
+	</ul>
+{% endblock content%}
